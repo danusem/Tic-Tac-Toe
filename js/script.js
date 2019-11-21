@@ -22,7 +22,6 @@ const KEY = {
 };
 
 
-
 let turn, winner, gameboard;
 
 
@@ -51,4 +50,15 @@ function handleClick(evt) {
        const selectedIndex = parseInt(evt.target.dataset.index); // => '3'
        gameboard[selectedIndex] = turn;
        turn *= -1
+       render();
 }
+
+function render() {
+// loop through the gameboard array
+gameboard.forEach(function(elem, index) {
+    squares[index].textContent = KEY[elem];
+});
+// inside the loop you need to take each value inside of gameboard
+// and use it to update the textContent inside the appropriate div in the squares node list
+ }
+
