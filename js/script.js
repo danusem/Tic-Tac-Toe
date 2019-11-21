@@ -49,6 +49,9 @@ function init() {
 function handleClick(evt) {
     // Assign clicked square to a variable
        const selectedIndex = parseInt(evt.target.dataset.index); // => '3'
+       // this is where you check
+       // if there's something there, don't do anything 
+       if(gameboard[selectedIndex]) return;
        gameboard[selectedIndex] = turn;
        turn *= -1
        render();
