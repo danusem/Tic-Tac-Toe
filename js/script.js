@@ -43,6 +43,7 @@ function init() {
     winner = false; //  we don't have a winner -starting from zero
     turn = 1;
     gameboard = [null, null, null, null, null, null, null, null, null];
+    render();
 }
 
 function handleClick(evt) {
