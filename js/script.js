@@ -58,7 +58,7 @@ function render() {
 gameboard.forEach(function(elem, index) {
     squares[index].textContent = KEY[elem];
 });
-// inside the loop you need to take each value inside of gameboard
-// and use it to update the textContent inside the appropriate div in the squares node list
- }
+message.textContent = `${KEY[turn]}'s Turn`;
+ 
+}
 
